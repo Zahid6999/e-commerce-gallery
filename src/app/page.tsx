@@ -19,6 +19,9 @@ const Homepage01 = () => {
       />
       <main className="bg-background-2 dark:bg-background-5">
         <Hero />
+        <section className="main-container">
+          <h2 className="text-heading-1 font-lato"> Hello World </h2>
+        </section>
 
         <CTAV1
           className="dark:bg-background-6 bg-white"

@@ -4,6 +4,7 @@ All the varaiables are added here
 @theme {
   /* =============== FONTS =============== */
   --font-inter-tight: 'Inter Tight', sans-serif;
+  --font-lato: 'Lato', sans-serif;
   /* =============== COLORS =============== */
   --color-primary-50: #f4f2fe;
   --color-primary-100: #ece8ff;
