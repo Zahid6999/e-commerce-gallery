@@ -9,18 +9,7 @@ import heroAsset4 from '@public/images/home-page-1/hero-asset-4.svg';
 import heroAsset1Dark from '@public/images/home-page-1/hero-asset-dark-1.svg';
 import heroAsset3Dark from '@public/images/home-page-1/hero-asset-dark-3.png';
 import heroAsset4Dark from '@public/images/home-page-1/hero-asset-dark-4.svg';
-import clientLogo1 from '@public/images/icons/client-logo-1.svg';
-import clientLogo2 from '@public/images/icons/client-logo-2.svg';
-import clientLogo3 from '@public/images/icons/client-logo-3.svg';
-import clientLogo4 from '@public/images/icons/client-logo-4.svg';
-import clientLogo5 from '@public/images/icons/client-logo-5.svg';
-import clientLogo1Dark from '@public/images/icons/client-logo-dark-1.svg';
-import clientLogo2Dark from '@public/images/icons/client-logo-dark-2.svg';
-import clientLogo3Dark from '@public/images/icons/client-logo-dark-3.svg';
-import clientLogo4Dark from '@public/images/icons/client-logo-dark-4.svg';
-import clientLogo5Dark from '@public/images/icons/client-logo-dark-5.svg';
 import Image from 'next/image';
-import Marquee from 'react-fast-marquee';
 import RevealAnimation from '../animation/RevealAnimation';
 import HeroDotBg from '../shared/HeroDotBg';
 
@@ -143,38 +132,6 @@ const Hero = () => {
           </div>
 
           {/* <!-- Client Logos --> */}
-
-          <RevealAnimation instant delay={0.6}>
-            <div className="relative mx-auto w-[375px] sm:w-[640px] md:w-[768px] lg:w-[1024px] xl:w-[1100px]">
-              <div className="from-background-3 dark:from-background-5 absolute top-0 left-0 z-40 h-full w-[30%] bg-gradient-to-r to-transparent"></div>
-              <div className="from-background-3 dark:from-background-5 absolute top-0 right-0 z-40 h-full w-[30%] bg-gradient-to-l to-transparent"></div>
-
-              <Marquee autoFill speed={40}>
-                <div className="flex items-center justify-center gap-8">
-                  {[
-                    { light: clientLogo1, dark: clientLogo1Dark },
-                    { light: clientLogo2, dark: clientLogo2Dark },
-                    { light: clientLogo3, dark: clientLogo3Dark },
-                    { light: clientLogo4, dark: clientLogo4Dark },
-                    { light: clientLogo5, dark: clientLogo5Dark },
-                  ].map((logo, index) => (
-                    <figure key={index} className={`w-28 md:w-36 ${index === 0 ? 'ml-8' : ''}`}>
-                      <Image
-                        src={logo.light}
-                        alt={`Client logo ${index + 1}`}
-                        className="inline-block lg:w-auto dark:hidden"
-                      />
-                      <Image
-                        src={logo.dark}
-                        alt={`Client logo ${index + 1}`}
-                        className="hidden lg:w-auto dark:inline-block"
-                      />
-                    </figure>
-                  ))}
-                </div>
-              </Marquee>
-            </div>
-          </RevealAnimation>
         </div>
       </section>
     </RevealAnimation>
