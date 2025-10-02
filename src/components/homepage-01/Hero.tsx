@@ -23,7 +23,6 @@ import Image from 'next/image';
 import Marquee from 'react-fast-marquee';
 import RevealAnimation from '../animation/RevealAnimation';
 import HeroDotBg from '../shared/HeroDotBg';
-import LinkButton from '../ui/button/LinkButton';
 
 const Hero = () => {
   return (
@@ -111,28 +110,6 @@ const Hero = () => {
               insights to keep you informed about the cryptocurrency&apos;s value fluctuations.
             </p>
           </RevealAnimation>
-
-          <ul className="mx-auto mb-9 flex flex-col gap-4 max-md:w-full md:mx-0 md:mb-11 md:w-auto md:flex-row lg:mb-14">
-            <RevealAnimation delay={0.3} direction="left" offset={50}>
-              <li>
-                <LinkButton
-                  href="/login-01"
-                  className="btn btn-primary hover:btn-white-dark dark:hover:btn-white btn-lg md:btn-xl mx-auto w-full md:mx-0 md:w-auto">
-                  Get started
-                </LinkButton>
-              </li>
-            </RevealAnimation>
-
-            <RevealAnimation delay={0.5} direction="left" offset={50}>
-              <li>
-                <LinkButton
-                  href="/signup-01"
-                  className="btn btn-white hover:btn-primary dark:btn-white-dark btn-lg md:btn-xl mx-auto w-full md:mx-0 md:w-auto">
-                  Free trial
-                </LinkButton>
-              </li>
-            </RevealAnimation>
-          </ul>
 
           {/* <!-- Avatars and Trust Indicator --> */}
           <div className="mb-20 flex items-center justify-center gap-4 max-[375px]:flex-col lg:mb-[100px]">
