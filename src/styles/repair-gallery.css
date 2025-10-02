@@ -1,0 +1,126 @@
+/* Repair Gallery Navbar Styles */
+
+/* Top Bar */
+.repair-top-bar {
+  background-color: #7c2d12; /* Dark red background */
+}
+
+/* Main Header */
+.repair-main-header {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Styles */
+.repair-logo {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}
+
+/* Search Bar */
+.repair-search-bar {
+  border: 1px solid #d1d5db;
+  transition: all 0.2s ease;
+}
+
+.repair-search-bar:focus {
+  border-color: #dc2626;
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+/* Navigation Items */
+.repair-nav-item {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.repair-nav-item:hover {
+  color: #dc2626;
+}
+
+.repair-nav-item.active {
+  color: #dc2626;
+}
+
+.repair-nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #dc2626;
+}
+
+/* Social Icons */
+.repair-social-icon {
+  transition: all 0.2s ease;
+}
+
+.repair-social-icon:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Buttons */
+.repair-contact-btn {
+  transition: all 0.2s ease;
+}
+
+.repair-contact-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* User Icons */
+.repair-user-icon {
+  transition: all 0.2s ease;
+}
+
+.repair-user-icon:hover {
+  background-color: #fef2f2;
+  transform: scale(1.05);
+}
+
+/* Cart Badge */
+.repair-cart-badge {
+  font-size: 0.75rem;
+  font-weight: 600;
+  min-width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .repair-main-header .main-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .repair-search-bar {
+    order: 3;
+    width: 100%;
+  }
+
+  .repair-logo {
+    order: 1;
+  }
+
+  .repair-user-icons {
+    order: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .repair-top-bar .main-container {
+    flex-direction: column;
+    gap: 0.5rem;
+    text-align: center;
+  }
+
+  .repair-contact-btn {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+  }
+}
