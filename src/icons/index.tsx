@@ -98,4 +98,27 @@ const YoutubeIcon: FC<ArrowIconProps> = ({ className }) => (
   </svg>
 );
 
-export { FacebookIcon, InstagramIcon, TikTokIcon, YoutubeIcon };
+const SearchIcon: FC<ArrowIconProps> = ({ className }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="24"
+    height="24"
+    viewBox="0 0 24 24"
+    fill="none"
+    className={cn(className)}>
+    <g clipPath="url(#clip0_26_296)">
+      <path
+        d="M10.2857 0C15.9634 0 20.5714 4.608 20.5714 10.2857C20.5714 15.9634 15.9634 20.5714 10.2857 20.5714C4.608 20.5714 0 15.9634 0 10.2857C0 4.608 4.608 0 10.2857 0ZM10.2857 18.2857C14.7051 18.2857 18.2857 14.7051 18.2857 10.2857C18.2857 5.86629 14.7051 2.28571 10.2857 2.28571C5.86629 2.28571 2.28571 5.86629 2.28571 10.2857C2.28571 14.7051 5.86629 18.2857 10.2857 18.2857ZM19.9829 18.3669L25.5 23.8829L23.8829 25.5L18.3669 19.9829L19.9829 18.3669Z"
+        fill="#8E000B"
+        fillOpacity="0.8"
+      />
+    </g>
+    <defs>
+      <clipPath id="clip0_26_296">
+        <rect width="24" height="24" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);
+
+export { FacebookIcon, InstagramIcon, SearchIcon, TikTokIcon, YoutubeIcon };

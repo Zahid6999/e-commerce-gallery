@@ -52,14 +52,6 @@ Common Styles all over the sites
 .modal-close {
   @apply hidden;
 }
-.stack-cards {
-  --stack-cards-gap: 24px;
-  @apply space-y-6;
-}
-
-.stack-cards__item {
-  @apply sticky top-28 origin-top overflow-hidden;
-}
 
 #theme-toggle::before {
   @apply absolute top-[-3px] right-[-4px] h-[7px] w-3.5 rotate-90 bg-radial-[circle_at_0_100%,transparent_6px,var(--color-background-8)_7px] bg-size-[50%_100%] bg-no-repeat content-[''];

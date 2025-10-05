@@ -21,24 +21,24 @@ const NavigationBar = () => {
   };
 
   return (
-    <div className="bg-white border-b border-red-200">
+    <div className="bg-white border-b-2 border-[rgba(142,0,11,0.15)] mt-2">
       <div className="main-container">
-        <nav className="flex items-center justify-center py-4">
+        <nav className="flex items-center justify-center ">
           <div className="flex items-center space-x-8">
             {navigationItems.map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
                 onClick={() => handleItemClick(item.name)}
-                className={`relative px-4 py-2 text-sm font-medium transition-colors ${
+                className={`relative px-4 py-2 text-tagline-1  transition-colors ${
                   activeItem === item.name || pathname === item.href
-                    ? 'text-red-600'
-                    : 'text-gray-700 hover:text-red-600'
+                    ? 'text-primary font-bold'
+                    : 'text-secondary hover:text-primary font-normal'
                 }`}>
                 {item.name}
                 {/* Active underline */}
                 {(activeItem === item.name || pathname === item.href) && (
-                  <div className="absolute bottom-0 left-0 right-0 h-0.5 bg-red-600"></div>
+                  <div className="absolute -bottom-1 left-0 right-0 w-5 mx-auto rounded-md  h-1.5 bg-primary"></div>
                 )}
               </Link>
             ))}
