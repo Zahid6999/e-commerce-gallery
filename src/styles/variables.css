@@ -6,7 +6,13 @@ All the varaiables are added here
   --font-inter-tight: 'Inter Tight', sans-serif;
   --font-lato: 'Lato', sans-serif;
   /* =============== COLORS =============== */
-  --color-primary-50: #f4f2fe;
+
+  --color-primary: #8e000b;
+  --color-primary-light: #e20000;
+  --color-secondary: #242424;
+  --color-accent: #f8f8f8;
+  --color-green: #00cd11;
+
   --color-primary-100: #ece8ff;
   --color-primary-200: #dcd4ff;
   --color-primary-300: #c3b1ff;
@@ -38,35 +44,19 @@ All the varaiables are added here
   --color-stroke-7: #2a333e;
   --color-stroke-8: #303b49;
   --color-stroke-9: var(--color-background-8);
-  --color-ns-yellow: #f9eb57;
-  --color-ns-green: #c6f56f;
-  --color-ns-red: #ffb9a2;
-  --color-ns-cyan: #83e7ee;
-  --color-ns-green-light: #e8fbc6;
-  --color-ns-cyan-light: #cdf5f8;
-  --color-ns-yellow-light: #fdf7bc;
 
   --color-gradient-1: linear-gradient(135deg, #a585ff 0%, #ffc2ad 100%);
-  --color-gradient-2: linear-gradient(135deg, #f9eb57 0%, #f99988 100%);
-  --color-gradient-3: linear-gradient(135deg, #83e7ee 0%, #f9eb57 100%);
-  --color-gradient-4: linear-gradient(135deg, #864ffe 0%, #23eed6 100%);
-  --color-gradient-5: linear-gradient(165deg, rgba(255, 255, 255, 0.5) 0.51%, rgba(255, 255, 255, 0) 64.43%);
-  --color-gradient-6: linear-gradient(#83e7ee 0%, #c6f56f 100%);
-  --color-gradient-7: linear-gradient(#ffffff 0%, #83e7ee 100%);
-  --color-gradient-8: linear-gradient(156deg, #ffffff 32.92%, #a585ff 91%);
-  --color-gradient-9: linear-gradient(156deg, #dfb0ff 32.92%, #fdbedc 91%);
 
   /* =============== TYPOGRAPHY =============== */
   --text-heading-1: 4.25rem;
   --text-heading-1--line-height: 110%;
-  --text-heading-2: 3.25rem;
-  --text-heading-2--line-height: 120%;
-  --text-heading-3: 2.5rem;
-  --text-heading-3--line-height: 120%;
-  --text-heading-4: 2rem;
-  --text-heading-4--line-height: 130%;
-  --text-heading-5: 1.5rem;
-  --text-heading-5--line-height: 140%;
+  --text-heading-2: 2.5rem;
+
+  --text-heading-3: 2rem;
+  --text-heading-3--line-height: 237.5%;
+  --text-heading-4: 1.5rem;
+  --text-heading-5: 1.25rem;
+
   --text-heading-6: 1.25rem;
   --text-heading-6--line-height: 140%;
   --text-tagline-1: 1rem;
@@ -86,19 +76,7 @@ All the varaiables are added here
   --breakpoint-lp: 1440px;
 
   /* ==========Shadows========== */
-  --shadow-1: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-  --shadow-2: 0px 10px 20px -5px rgba(28, 34, 43, 0.05), 0px 20px 65px -5px rgba(28, 34, 43, 0.05);
-  --shadow-3: 0px 25px 80px -12px rgba(28, 34, 43, 0.1);
-  --shadow-4: 0px 10px 20px -5px rgba(28, 34, 43, 0.05), 0px 20px 65px -5px rgba(28, 34, 43, 0.05);
-  --shadow-5: 0px 25px 80px -12px rgba(28, 34, 43, 0.1);
-  --shadow-6: 0px 44px 64px 0px rgba(29, 32, 35, 0.16);
-  --shadow-7: 0px 4px 6px -1px rgba(28, 34, 43, 0.1), 0px 2px 4px -1px rgba(28, 34, 43, 0.05);
-  --shadow-8: 0px 12.5px 40px -6px rgba(28, 34, 43, 0.1);
-  --shadow-9: 0px 1px 2px 0px rgba(28, 34, 43, 0.05);
-  --shadow-10: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  --shadow-11: 0px 12px 20px rgba(185, 166, 241, 0.16);
-
-  --stack-cards-gap: 2rem;
+  --shadow-1: 2px 3px 25px 0 rgba(0, 0, 0, 0.1);
 }
 
 .dark {

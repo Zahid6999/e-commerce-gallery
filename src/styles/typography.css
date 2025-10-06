@@ -2,7 +2,7 @@
 Default Body and Typography styles
 =========================== */
 body {
-  @apply font-inter-tight antialiased;
+  @apply font-lato antialiased;
 }
 
 /* =========================
@@ -22,17 +22,17 @@ Font base styles
   h4,
   h5,
   h6 {
-    @apply font-inter-tight text-secondary dark:text-accent;
+    @apply font-lato text-secondary dark:text-accent;
   }
 
   h1 {
     @apply text-heading-4 sm:text-heading-3 md:text-heading-2 xl:text-heading-1 font-medium;
   }
   h2 {
-    @apply text-heading-5 sm:text-heading-4 md:text-heading-3 xl:text-heading-2;
+    @apply text-heading-5 sm:text-heading-4 md:text-heading-3 xl:text-heading-2 font-bold leading-normal;
   }
   h3 {
-    @apply text-heading-5 md:text-heading-4 xl:text-heading-3;
+    @apply text-heading-5 md:text-heading-4 xl:text-heading-4;
   }
   h4 {
     @apply text-heading-4;

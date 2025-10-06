@@ -1,0 +1,55 @@
+/* Repair Gallery - Essential Custom Styles Only */
+
+/* Custom animations that Tailwind doesn't provide */
+@keyframes slideInFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Custom utility classes for complex animations */
+.mobile-menu-enter {
+  animation: slideInFromLeft 0.3s ease-out;
+}
+
+.mobile-overlay-enter {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* Custom backdrop blur for mobile menu overlay */
+.mobile-menu-overlay {
+  backdrop-filter: blur(4px);
+}
+
+/* Custom pseudo-element for active navigation underline */
+.repair-nav-item.active::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #dc2626;
+}
+
+/* Custom mobile menu slide animation */
+.mobile-menu-slide {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.mobile-menu-slide.open {
+  transform: translateX(0);
+}
