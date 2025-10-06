@@ -12,7 +12,7 @@ const Homepage01 = () => {
   return (
     <Fragment>
       <RepairGalleryNavbar />
-      <main className="bg-background-2 dark:bg-background-5">
+      <main className="bg-white dark:bg-background-5">
         <section className="main-container">
           <h2 className="text-heading-1 font-lato"> Hello World </h2>
         </section>

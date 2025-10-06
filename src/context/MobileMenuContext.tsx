@@ -1,16 +1,12 @@
 'use client';
 
-import { useMobileMenu } from '@/hooks/useMobileMenu';
-import { createContext, ReactNode, useContext } from 'react';
+import { createContext, ReactNode, useContext, useState } from 'react';
 
 interface MobileMenuContextType {
   isOpen: boolean;
-  openMenu: () => void;
-  closeMenu: () => void;
   toggleMenu: () => void;
-  activeSubmenu: string | null;
-  toggleSubmenu: (menuId: string) => void;
-  closeAllSubmenus: () => void;
+  closeMenu: () => void;
+  openMenu: () => void;
 }
 
 const MobileMenuContext = createContext<MobileMenuContextType | undefined>(undefined);
@@ -20,15 +16,31 @@ interface MobileMenuProviderProps {
 }
 
 export const MobileMenuProvider = ({ children }: MobileMenuProviderProps) => {
-  const mobileMenuState = useMobileMenu();
+  const [isOpen, setIsOpen] = useState(false);
 
-  return <MobileMenuContext.Provider value={mobileMenuState}>{children}</MobileMenuContext.Provider>;
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const closeMenu = () => {
+    setIsOpen(false);
+  };
+
+  const openMenu = () => {
+    setIsOpen(true);
+  };
+
+  return (
+    <MobileMenuContext.Provider value={{ isOpen, toggleMenu, closeMenu, openMenu }}>
+      {children}
+    </MobileMenuContext.Provider>
+  );
 };
 
-export const useMobileMenuContext = () => {
+export const useMobileMenu = () => {
   const context = useContext(MobileMenuContext);
   if (context === undefined) {
-    throw new Error('useMobileMenuContext must be used within a MobileMenuProvider');
+    throw new Error('useMobileMenu must be used within a MobileMenuProvider');
   }
   return context;
 };
