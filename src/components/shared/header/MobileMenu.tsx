@@ -10,8 +10,6 @@ interface MobileMenuProps {
 }
 
 const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
-  console.log('MobileMenu render - isOpen:', isOpen);
-
   const menuItems = [
     { name: 'Home', href: '/', icon: HomeIcon },
     { name: 'Shop', href: '/shop', icon: ShoppingBagIcon },
@@ -29,11 +27,11 @@ const MobileMenu = ({ isOpen, onClose }: MobileMenuProps) => {
   return (
     <>
       {/* Overlay */}
-      {isOpen && <div className="fixed inset-0 bg-black bg-opacity-50 z-40 lg:hidden" onClick={onClose} />}
+      {isOpen && <div className="fixed inset-0 bg-black bg-opacity-50 z-30 lg:hidden" onClick={onClose} />}
 
       {/* Menu Sidebar */}
       <div
-        className={`fixed top-0 left-0 h-full w-80 bg-white z-50 lg:hidden transform transition-transform duration-300 ease-in-out ${
+        className={`fixed top-0 left-0 h-full w-80 bg-white z-40 lg:hidden transform transition-transform duration-300 ease-in-out ${
           isOpen ? 'translate-x-0' : '-translate-x-full'
         }`}>
         {/* Menu Header */}

@@ -1,4 +1,5 @@
 import Hero from '@/components/homepage-01/Hero';
+import OurCommitments from '@/components/homepage-01/OurCommitments';
 import RepairGalleryNavbar from '@/components/shared/header/RepairGalleryNavbar';
 
 import { Metadata } from 'next';
@@ -13,8 +14,9 @@ const Homepage01 = () => {
   return (
     <Fragment>
       <RepairGalleryNavbar />
-      <main className="bg-white dark:bg-background-5">
+      <main className="bg-white dark:bg-background-5 pt-[240px]">
         <Hero />
+        <OurCommitments />
       </main>
     </Fragment>
   );
