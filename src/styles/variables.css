@@ -6,14 +6,13 @@ All the varaiables are added here
   --font-inter-tight: 'Inter Tight', sans-serif;
   --font-lato: 'Lato', sans-serif;
   /* =============== COLORS =============== */
-
+  --color-primary-100: #ffd9dc;
   --color-primary: #8e000b;
   --color-primary-light: #e20000;
   --color-secondary: #242424;
   --color-accent: #f8f8f8;
   --color-green: #00cd11;
 
-  --color-primary-100: #ece8ff;
   --color-primary-200: #dcd4ff;
   --color-primary-300: #c3b1ff;
   --color-primary-400: #a585ff;
@@ -77,6 +76,9 @@ All the varaiables are added here
 
   /* ==========Shadows========== */
   --shadow-1: 2px 3px 25px 0 rgba(0, 0, 0, 0.1);
+  --shadow-2: 2px 3px 28.8px 0 rgba(226, 0, 0, 0.5);
+  --shadow-3: 0 0 10px 5px rgba(121, 121, 121, 0.2);
+  --shadow-4: 0 0 31.3px 5px rgba(0, 0, 0, 0.38);
 }
 
 .dark {

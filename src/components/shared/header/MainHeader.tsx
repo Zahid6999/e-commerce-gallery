@@ -24,7 +24,7 @@ const MainHeader = () => {
               <input
                 type="text"
                 placeholder="Search for product"
-                className="w-full pl-12 pr-4 py-3 border border-gray-100 rounded-full text-secondary placeholder-[#808080] focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all duration-200"
+                className="w-full pl-12 pr-4 py-3  rounded-full text-secondary placeholder-[#808080] focus:outline-none focus:ring-1 focus:ring-primary focus:border-transparent transition-all duration-200"
               />
             </div>
           </div>

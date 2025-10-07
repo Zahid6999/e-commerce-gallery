@@ -1,3 +1,4 @@
+import Hero from '@/components/homepage-01/Hero';
 import RepairGalleryNavbar from '@/components/shared/header/RepairGalleryNavbar';
 
 import { Metadata } from 'next';
@@ -13,9 +14,7 @@ const Homepage01 = () => {
     <Fragment>
       <RepairGalleryNavbar />
       <main className="bg-white dark:bg-background-5">
-        <section className="main-container">
-          <h2 className="text-heading-1 font-lato"> Hello World </h2>
-        </section>
+        <Hero />
       </main>
     </Fragment>
   );

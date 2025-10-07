@@ -49,7 +49,7 @@ A comprehensive, modern Next.js 15 SaaS template collection with 20+ homepage va
 - **Next.js 15**: Latest features with Turbopack support
 - **TypeScript**: Full type safety and better developer experience
 - **Component Architecture**: Reusable, modular components
-- **Code Quality**: ESLint, Prettier, and Husky pre-commit hooks
+- **Code Quality**: ESLint, Prettier, and lint-staged
 - **Conventional Commits**: Structured commit messages with Commitlint
 
 ## 🛠️ Tech Stack
@@ -62,7 +62,7 @@ A comprehensive, modern Next.js 15 SaaS template collection with 20+ homepage va
 - **Maps**: Leaflet with React integration
 - **Content**: Markdown support with gray-matter
 - **Theme**: next-themes for dark/light mode
-- **Development**: ESLint, Prettier, Husky, lint-staged
+- **Development**: ESLint, Prettier, lint-staged
 
 ## 📋 Prerequisites
 
@@ -188,7 +188,6 @@ This project uses several tools to maintain code quality:
 
 - **ESLint**: JavaScript/TypeScript linting
 - **Prettier**: Code formatting
-- **Husky**: Git hooks for pre-commit checks
 - **lint-staged**: Run linters on staged files only
 - **Commitlint**: Enforce conventional commit messages
 

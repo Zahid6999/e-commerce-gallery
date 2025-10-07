@@ -4,14 +4,13 @@
 
 This project uses several tools to maintain code quality and enforce consistent standards:
 
-### Pre-commit Hooks (Husky + lint-staged)
+### Code Quality Tools
 
-Before each commit, the following tools will automatically run:
+The following tools are available for maintaining code quality:
 
 - **ESLint**: Checks and fixes JavaScript/TypeScript code issues
 - **Prettier**: Formats code according to project standards
-
-These tools only run on **staged files** to keep commits fast.
+- **lint-staged**: Run linters on staged files only (manual execution)
 
 ### Commit Message Linting (Commitlint)
 
@@ -83,9 +82,7 @@ feat(auth): implement OAuth2 integration.
 1. Make your changes
 2. Stage files with `git add`
 3. Commit with a conventional commit message: `git commit -m "feat: add new feature"`
-4. The pre-commit hook will automatically:
-   - Run ESLint on staged files
-   - Format code with Prettier
-   - Check your commit message format
-
-If any of these steps fail, the commit will be rejected and you'll need to fix the issues before trying again.
+4. Run code quality checks manually:
+   - `yarn lint:fix` - Run ESLint and fix issues
+   - `yarn format` - Format code with Prettier
+   - `yarn commitlint` - Check your commit message format

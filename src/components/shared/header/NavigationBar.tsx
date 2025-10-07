@@ -21,7 +21,7 @@ const NavigationBar = () => {
   };
 
   return (
-    <div className="bg-white  mt-2">
+    <div className="bg-white border-b-2 border-[rgba(142,0,11,0.15)] mt-2">
       <div className="main-container">
         <nav className="flex items-center justify-center">
           <div className="flex items-center space-x-8">
