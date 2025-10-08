@@ -1,3 +1,4 @@
+import Categories from '@/components/homepage-01/Categories';
 import Hero from '@/components/homepage-01/Hero';
 import OurCommitments from '@/components/homepage-01/OurCommitments';
 import RepairGalleryNavbar from '@/components/shared/header/RepairGalleryNavbar';
@@ -17,6 +18,7 @@ const Homepage01 = () => {
       <main className="bg-white dark:bg-background-5 pt-[240px]">
         <Hero />
         <OurCommitments />
+        <Categories />
       </main>
     </Fragment>
   );

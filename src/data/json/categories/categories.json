@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Wireless Headphone",
+    "icon": "/images/categories/wireless-headphone.svg"
+  },
+  {
+    "id": 2,
+    "name": "Wired Earphone",
+    "icon": "/images/categories/wired-earphone.svg"
+  },
+  {
+    "id": 3,
+    "name": "Speaker",
+    "icon": "/images/categories/speaker.svg"
+  },
+  {
+    "id": 4,
+    "name": "Adapter",
+    "icon": "/images/categories/adapter.svg"
+  },
+  {
+    "id": 5,
+    "name": "Cable",
+    "icon": "/images/categories/cable.svg"
+  },
+  {
+    "id": 6,
+    "name": "Earbuds",
+    "icon": "/images/categories/earbuds.svg"
+  },
+  {
+    "id": 7,
+    "name": "Neckband",
+    "icon": "/images/categories/neckband.svg"
+  },
+  {
+    "id": 8,
+    "name": "Power bank",
+    "icon": "/images/categories/power-bank.svg"
+  },
+  {
+    "id": 9,
+    "name": "Smart watch",
+    "icon": "/images/categories/smart-watch.svg"
+  },
+  {
+    "id": 10,
+    "name": "Mobile Phone",
+    "icon": "/images/categories/mobile-phone.svg"
+  },
+  {
+    "id": 11,
+    "name": "Tablet",
+    "icon": "/images/categories/tablet.svg"
+  },
+  {
+    "id": 12,
+    "name": "Keyboard & Mouse",
+    "icon": "/images/categories/keyboard-mouse.svg"
+  },
+  {
+    "id": 13,
+    "name": "Hubs & Docks",
+    "icon": "/images/categories/hubs-docks.svg"
+  },
+  {
+    "id": 14,
+    "name": "Backpack",
+    "icon": "/images/categories/backpack.svg"
+  },
+  {
+    "id": 15,
+    "name": "Home Appliance",
+    "icon": "/images/categories/home-appliance.svg"
+  },
+  {
+    "id": 16,
+    "name": "Trimmer",
+    "icon": "/images/categories/trimmer.svg"
+  },
+  {
+    "id": 17,
+    "name": "Fan",
+    "icon": "/images/categories/fan.svg"
+  },
+  {
+    "id": 18,
+    "name": "Mobile Repair Parts",
+    "icon": "/images/categories/mobile-repair-parts.svg"
+  }
+]
